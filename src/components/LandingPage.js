@@ -1,15 +1,16 @@
 import React from 'react';
 import { VStack, Heading } from '@chakra-ui/react';
 import SectionPage from './SectionPage';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import AnimatedProfile from './AnimatedProfile';
 
 const LandingPage = () => {
   return (
     <SectionPage>
       <VStack spacing={8} justifySelf="center" alignSelf={'center'}>
         <Heading as="h1" size="2xl">
-          Kevin Ding
+          Hey, I'm Kevin
         </Heading>
+        <AnimatedProfile />
       </VStack>
     </SectionPage>
   );
