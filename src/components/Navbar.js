@@ -1,10 +1,11 @@
 import React from 'react';
-import { Box, HStack, Link } from '@chakra-ui/react';
+import { Box, HStack, Link, useColorModeValue } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 const Navbar = () => {
+  const bgColor = useColorModeValue('white', 'gray.800');
   return (
-    <Box position="fixed" width="100%">
+    <Box position="fixed" width="100%" backgroundColor={bgColor}>
       <Box
         py={2}
         px={[0, 0, 10, 10]}

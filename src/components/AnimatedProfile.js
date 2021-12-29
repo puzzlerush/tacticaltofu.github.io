@@ -1,18 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Box } from '@chakra-ui/react';
+import useScrollPosition from '../hooks/useScrollPosition';
 
 const AnimatedProfile = ({ sprite, ...rest }) => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
+  const scrollPosition = useScrollPosition();
 
   return (
     <Box

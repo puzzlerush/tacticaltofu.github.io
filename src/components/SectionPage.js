@@ -3,7 +3,7 @@ import { Grid } from '@chakra-ui/react';
 
 const SectionPage = ({ children, ...rest }) => {
   return (
-    <Grid minH="100vh" p={3} {...rest}>
+    <Grid minH="100vh" {...rest}>
       {children}
     </Grid>
   );

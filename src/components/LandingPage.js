@@ -1,13 +1,31 @@
 import React from 'react';
-import { VStack, Stack, Box, Text, Heading, Link } from '@chakra-ui/react';
+import { VStack, Stack, Box, Text, Heading } from '@chakra-ui/react';
 import SectionPage from './SectionPage';
 import ThemedLink from './ThemedLink';
 import AnimatedBear from './AnimatedBear';
+import background from '../assets/background.jpg';
+import useScrollPosition from '../hooks/useScrollPosition';
 
 const LandingPage = () => {
+  const scrollPosition = useScrollPosition(0);
   return (
-    <SectionPage id="about">
-      <VStack spacing={8} justifySelf="center" alignSelf={'center'}>
+    <SectionPage
+      id="about"
+      backgroundImage={background}
+      backgroundSize="cover"
+      style={{ backgroundPositionY: `${scrollPosition * 0.5}px` }}
+    >
+      <VStack
+        spacing={8}
+        justifySelf="center"
+        alignSelf={'center'}
+        width="100%"
+        height="100%"
+        backgroundColor="rgba(26,32,44, 0.8)"
+        color="white"
+        display="flex"
+        justifyContent="center"
+      >
         <Heading as="h1" size="2xl">
           Hey, I'm Kevin
         </Heading>
