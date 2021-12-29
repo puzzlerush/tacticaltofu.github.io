@@ -3,7 +3,8 @@ import { ChakraProvider, Box } from '@chakra-ui/react';
 import theme from './theme';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
-import AboutPage from './components/AboutPage';
+import ProjectPage from './components/ProjectPage';
+import './styles.css';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Box>
         <Navbar />
         <LandingPage />
-        <AboutPage />
+        <ProjectPage />
       </Box>
     </ChakraProvider>
   );

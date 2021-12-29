@@ -2,9 +2,9 @@ import React from 'react';
 import { useColorModeValue } from '@chakra-ui/react';
 import SectionPage from './SectionPage';
 
-const AboutPage = () => {
+const ProjectPage = () => {
   const bgColor = useColorModeValue('orange', 'tomato');
-  return <SectionPage bg={bgColor}></SectionPage>;
+  return <SectionPage bg={bgColor} id="projects"></SectionPage>;
 };
 
-export default AboutPage;
+export default ProjectPage;

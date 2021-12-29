@@ -6,7 +6,7 @@ import ThemedLink from './ThemedLink';
 
 const LandingPage = () => {
   return (
-    <SectionPage>
+    <SectionPage id="about">
       <VStack spacing={8} justifySelf="center" alignSelf={'center'}>
         <Heading as="h1" size="2xl">
           Hey, I'm Kevin

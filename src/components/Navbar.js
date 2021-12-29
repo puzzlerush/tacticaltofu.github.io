@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, HStack, Link } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 const Navbar = () => {
@@ -11,8 +11,13 @@ const Navbar = () => {
         display="flex"
         justifyContent="flex-end"
         alignItems="center"
+        fontSize="xl"
       >
-        <ColorModeSwitcher />
+        <HStack spacing={5}>
+          <Link href="#about">about</Link>
+          <Link href="#projects">projects</Link>
+          <ColorModeSwitcher />
+        </HStack>
       </Box>
     </Box>
   );
