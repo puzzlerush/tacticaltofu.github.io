@@ -3,7 +3,7 @@ import { Link, useColorModeValue } from '@chakra-ui/react';
 
 const ThemedLink = props => {
   const color = useColorModeValue('blue.300', 'orange.300');
-  return <Link fontWeight="bold" {...props} color={color} />;
+  return <Link color={color} {...props} />;
 };
 
 export default ThemedLink;

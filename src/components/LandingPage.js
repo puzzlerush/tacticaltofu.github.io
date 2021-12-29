@@ -13,7 +13,10 @@ const LandingPage = () => {
       id="about"
       backgroundImage={background}
       backgroundSize="cover"
-      style={{ backgroundPositionY: `${scrollPosition * 0.5}px` }}
+      style={{
+        backgroundPositionX: 'center',
+        backgroundPositionY: `${scrollPosition * 0.5}px`,
+      }}
     >
       <VStack
         spacing={8}
@@ -31,7 +34,11 @@ const LandingPage = () => {
         </Heading>
         <Stack direction={['column', 'column', 'row']} spacing={8}>
           <AnimatedBear margin="auto" />
-          <Box w={[300, 400, 400, 600]} fontSize={['md', 'lg', 'xl']}>
+          <Box
+            w={[300, 400, 400, 600]}
+            fontSize={['md', 'lg', 'xl']}
+            textAlign="justify"
+          >
             <Text>
               I'm a 3rd year Computer Science student at the{' '}
               <ThemedLink
@@ -41,7 +48,43 @@ const LandingPage = () => {
               >
                 University of Waterloo
               </ThemedLink>
+              . Previously, I've done internships at{' '}
+              <ThemedLink
+                href="https://www.snapcommerce.com/"
+                target="_blank"
+                isExternal
+              >
+                Snapcommerce
+              </ThemedLink>
+              ,{' '}
+              <ThemedLink
+                href="https://www.cooperators.ca/"
+                target="_blank"
+                isExternal
+              >
+                The Co&#8209;operators
+              </ThemedLink>
+              , and{' '}
+              <ThemedLink
+                href="https://www.sap.com/canada/index.html"
+                target="_blank"
+                isExternal
+              >
+                SAP
+              </ThemedLink>
               .
+            </Text>
+            <br />
+            <Text>
+              I'm looking for software engineering internship opportunities for
+              the Summer 2022 term. Feel free to look at my{' '}
+              <ThemedLink href="/resume.pdf" target="_blank">
+                resume
+              </ThemedLink>{' '}
+              or contact me at{' '}
+              <ThemedLink href="mailto:k24ding@uwaterloo.ca">
+                k24ding@uwaterloo.ca
+              </ThemedLink>
             </Text>
           </Box>
         </Stack>
