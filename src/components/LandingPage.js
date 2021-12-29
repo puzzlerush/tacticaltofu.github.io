@@ -5,6 +5,7 @@ import ThemedLink from './ThemedLink';
 import AnimatedBear from './AnimatedBear';
 import background from '../assets/background.jpg';
 import useScrollPosition from '../hooks/useScrollPosition';
+import ScrollDownIcon from './ScrollDownIcon';
 
 const LandingPage = () => {
   const scrollPosition = useScrollPosition(0);
@@ -88,6 +89,7 @@ const LandingPage = () => {
             </Text>
           </Box>
         </Stack>
+        <ScrollDownIcon />
       </VStack>
     </SectionPage>
   );
