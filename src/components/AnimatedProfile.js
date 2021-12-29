@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
-import mog from '../assets/mog.png';
 
-const mogWidth = Math.floor(528 / 4);
-
-const AnimatedProfile = () => {
+const AnimatedProfile = ({ sprite, ...rest }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  console.log(scrollPosition);
+
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -19,12 +16,17 @@ const AnimatedProfile = () => {
 
   return (
     <Box
-      width="96px"
-      height="132px"
-      backgroundImage={mog}
+      width={sprite['width']}
+      height={sprite['height']}
+      backgroundImage={sprite['image']}
+      display="inline-block"
       style={{
-        backgroundPositionX: mogWidth * (Math.floor(scrollPosition / 100) % 4),
+        backgroundPositionX:
+          sprite['width'] *
+          (Math.floor(scrollPosition / sprite['scrollAmount']) %
+            sprite['numFrames']),
       }}
+      {...rest}
     />
   );
 };
