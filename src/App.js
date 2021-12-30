@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import ProjectPage from './components/ProjectPage';
 import './styles.css';
+import SectionPage from './components/SectionPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <LandingPage />
         <ProjectPage />
+        <SectionPage />
       </Box>
     </ChakraProvider>
   );

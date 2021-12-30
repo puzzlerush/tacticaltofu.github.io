@@ -6,6 +6,7 @@ import IconLink from './IconLink';
 
 const ProjectCard = ({
   frontImage,
+  backColor,
   backContents,
   title,
   demoLink,
@@ -17,7 +18,7 @@ const ProjectCard = ({
       <FlipCard
         size={250}
         frontImage={frontImage}
-        backgroundColor="#424242"
+        backgroundColor={backColor}
         color="white"
         display="flex"
         justifyContent="center"
