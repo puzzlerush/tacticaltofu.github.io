@@ -16,15 +16,18 @@ import ProjectCard from './ProjectCard';
 import ThemedLink from './ThemedLink';
 import deer from '../assets/deer_logo512.png';
 import reddit from '../assets/reddit_logo512.png';
+
 import AnimatedProfile from './AnimatedProfile';
-import celes from '../assets/celes_walk_front.png';
-import edgar from '../assets/edgar_walk_back.png';
-import locke from '../assets/locke_walk_front.png';
-import terra from '../assets/terra_walk_back.png';
-import mog from '../assets/mog_walk_front.png';
-import cyan from '../assets/cyan_walk_back.png';
-import sabin from '../assets/sabin_walk_back.png';
+
 import shadow from '../assets/shadow_walk_front.png';
+import celes from '../assets/celes_walk_front.png';
+import locke from '../assets/locke_walk_front.png';
+import mog from '../assets/mog_walk_front.png';
+
+import terra from '../assets/terra_walk_back.png';
+import edgar from '../assets/edgar_walk_back.png';
+import sabin from '../assets/sabin_walk_back.png';
+import cyan from '../assets/cyan_walk_back.png';
 
 const baseSprite = {
   numFrames: 4,
@@ -34,54 +37,22 @@ const baseSprite = {
 };
 
 const sprites = {
-  celes: {
-    ...baseSprite,
-    image: celes,
-  },
+  shadow: { ...baseSprite, image: shadow },
+  celes: { ...baseSprite, image: celes },
+  locke: { ...baseSprite, image: locke },
+  mog: { ...baseSprite, height: 132, image: mog },
 
-  edgar: {
-    ...baseSprite,
-    image: edgar,
-  },
-
-  locke: {
-    ...baseSprite,
-    image: locke,
-  },
-
-  terra: {
-    ...baseSprite,
-    width: 84,
-    image: terra,
-  },
-
-  mog: {
-    ...baseSprite,
-    height: 132,
-    image: mog,
-  },
-
-  shadow: {
-    ...baseSprite,
-    image: shadow,
-  },
-
-  cyan: {
-    ...baseSprite,
-    image: cyan,
-  },
-
-  sabin: {
-    ...baseSprite,
-    image: sabin,
-  },
+  terra: { ...baseSprite, width: 84, image: terra },
+  edgar: { ...baseSprite, image: edgar },
+  sabin: { ...baseSprite, image: sabin },
+  cyan: { ...baseSprite, image: cyan },
 };
 
 const ProjectPage = () => {
   const bgColor = useColorModeValue('orange', 'tomato');
   const cardTitleColor = useColorModeValue('black', 'white');
 
-  const { celes, edgar, locke, terra, mog, shadow, cyan, sabin } = sprites;
+  const { shadow, celes, locke, mog, terra, edgar, sabin, cyan } = sprites;
   return (
     <SectionPage bg={bgColor} id="projects" templateColumns="repeat(12, 1fr)">
       <GridItem colSpan={3} justifySelf="center" alignSelf={'center'}>
