@@ -29,6 +29,7 @@ const LandingPage = () => {
         color="white"
         display="flex"
         justifyContent="center"
+        pt={[12, 12, 0]}
       >
         <Heading as="h1" size="2xl">
           Hey, I'm Kevin

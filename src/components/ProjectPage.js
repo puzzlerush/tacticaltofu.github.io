@@ -63,9 +63,14 @@ const ProjectPage = () => {
           <AnimatedProfile sprite={mog} />
         </VStack>
       </GridItem>
-      <GridItem colSpan={6} justifySelf="center" alignSelf={'center'}>
+      <GridItem
+        colSpan={6}
+        justifySelf="center"
+        alignSelf={'center'}
+        mb={[10, 10, 0]}
+      >
         <VStack spacing={8}>
-          <Heading ml={[4, 0, 0, 0]} as="h1" size="2xl">
+          <Heading mt={[10, 10, 0]} as="h1" size="2xl">
             here's some of my projects
           </Heading>
           <Spacer />
