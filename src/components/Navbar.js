@@ -5,7 +5,7 @@ import { ColorModeSwitcher } from '../ColorModeSwitcher';
 const Navbar = () => {
   const bgColor = useColorModeValue('white', 'gray.800');
   return (
-    <Box position="fixed" width="100%" backgroundColor={bgColor}>
+    <Box position="fixed" width="100%" backgroundColor={bgColor} zIndex={420}>
       <Box
         py={2}
         px={[0, 0, 10, 10]}
