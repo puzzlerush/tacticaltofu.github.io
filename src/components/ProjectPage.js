@@ -33,7 +33,7 @@ const ProjectPage = () => {
               </Text>
               <UnorderedList ml={6} textAlign="left">
                 <ListItem>
-                  300+ daily active users for a period of 2 months
+                  300+ daily active users from May to June 2021
                 </ListItem>
                 <ListItem>React/Redux + MaterialUI</ListItem>
               </UnorderedList>
