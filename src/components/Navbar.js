@@ -17,6 +17,7 @@ const Navbar = () => {
         <HStack spacing={5}>
           <Link href="#about">about</Link>
           <Link href="#projects">projects</Link>
+          <Link href="#work">work</Link>
           <ColorModeSwitcher />
         </HStack>
       </Box>

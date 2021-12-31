@@ -4,8 +4,8 @@ import theme from './theme';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import ProjectPage from './components/ProjectPage';
+import WorkPage from './components/WorkPage';
 import './styles.css';
-import SectionPage from './components/SectionPage';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <LandingPage />
         <ProjectPage />
-        <SectionPage />
+        <WorkPage />
       </Box>
     </ChakraProvider>
   );

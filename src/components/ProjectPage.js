@@ -67,10 +67,10 @@ const ProjectPage = () => {
         colSpan={6}
         justifySelf="center"
         alignSelf={'center'}
-        mb={[10, 10, 0]}
+        my={[10, 10, 0]}
       >
         <VStack spacing={8}>
-          <Heading mt={[10, 10, 0]} as="h1" size="2xl">
+          <Heading as="h1" size="2xl">
             here's some of my projects
           </Heading>
           <Spacer />

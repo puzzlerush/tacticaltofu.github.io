@@ -22,7 +22,7 @@ const LandingPage = () => {
       <VStack
         spacing={8}
         justifySelf="center"
-        alignSelf={'center'}
+        alignSelf="center"
         width="100%"
         height="100%"
         backgroundColor="rgba(26,32,44, 0.8)"
