@@ -67,7 +67,8 @@ const ProjectPage = () => {
         colSpan={6}
         justifySelf="center"
         alignSelf={'center'}
-        my={[10, 10, 0]}
+        my={[12, 10, 0]}
+        pt={[6, 0]}
       >
         <VStack spacing={8}>
           <Heading as="h1" size="2xl">

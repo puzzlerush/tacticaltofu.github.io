@@ -8,15 +8,16 @@ import useScrollPosition from '../hooks/useScrollPosition';
 import ScrollDownIcon from './ScrollDownIcon';
 
 const LandingPage = () => {
-  const scrollPosition = useScrollPosition(0);
+  // const scrollPosition = useScrollPosition(0);
   return (
     <SectionPage
       id="about"
       backgroundImage={background}
       backgroundSize="cover"
+      backgroundAttachment="fixed"
       style={{
         backgroundPositionX: 'center',
-        backgroundPositionY: `${scrollPosition * 0.5}px`,
+        // backgroundPositionY: `${scrollPosition * 0.5}px`,
       }}
     >
       <VStack
@@ -30,6 +31,7 @@ const LandingPage = () => {
         display="flex"
         justifyContent="center"
         pt={[12, 12, 0]}
+        mt={[4, 0]}
       >
         <Heading as="h1" size="2xl">
           Hey, I'm Kevin
