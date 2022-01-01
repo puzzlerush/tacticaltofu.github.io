@@ -7,8 +7,8 @@ import ThemedLink from './ThemedLink';
 const WorkPage = () => {
   return (
     <SectionPage id="work" templateColumns="repeat(12, 1fr)">
-      <GridItem colSpan={[1, 1, 2, 3]} />
-      <GridItem colSpan={[10, 10, 8, 6]} my={[10, 10, 0]}>
+      <GridItem colSpan={[0, 1]} />
+      <GridItem pl={[4, 0]} colSpan={[12, 10]} my={[10, 10, 0]}>
         <VStack
           spacing={7}
           height="100%"
@@ -26,7 +26,7 @@ const WorkPage = () => {
             </ThemedLink>{' '}
             for more details.
           </Text>
-          <Stack direction={['column', 'row']}>
+          <Stack direction={['column', 'column', 'column', 'row']}>
             <ExperienceCard
               title="Software Engineer"
               company="Snapcommerce"
@@ -57,7 +57,7 @@ const WorkPage = () => {
           </Stack>
         </VStack>
       </GridItem>
-      <GridItem colSpan={[1, 1, 2, 3]} />
+      <GridItem colSpan={[0, 1]} />
     </SectionPage>
   );
 };
