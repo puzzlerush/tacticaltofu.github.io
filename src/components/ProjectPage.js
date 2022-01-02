@@ -33,7 +33,7 @@ const baseSprite = {
   numFrames: 4,
   width: 96,
   height: 144,
-  scrollAmount: 100,
+  scrollAmount: 70,
 };
 
 const sprites = {

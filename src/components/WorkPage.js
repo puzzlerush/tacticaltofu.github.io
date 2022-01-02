@@ -8,7 +8,7 @@ const WorkPage = () => {
   return (
     <SectionPage id="work" templateColumns="repeat(12, 1fr)">
       <GridItem colSpan={[0, 1]} />
-      <GridItem pl={[4, 0]} colSpan={[12, 10]} my={[12, 10, 0]} pt={[4, 0]}>
+      <GridItem pl={[6, 0]} colSpan={[12, 10]} my={[12, 10, 0]} pt={[4, 0]}>
         <VStack
           spacing={7}
           height="100%"
