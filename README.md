@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment instructions for gh-pagse
+
+1. Generate new personal access token with the `repo` scope
+2. Run `git remote set-url origin https://tacticaltofu:<token>@github.com/tacticaltofu/tacticaltofu.github.io`
+3. Run `npm run deploy`
+
 ## Available Scripts
 
 In the project directory, you can run:
