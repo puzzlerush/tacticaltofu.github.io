@@ -1,0 +1,2 @@
+html{scroll-behavior:smooth}.flip-card-back,.flip-card-front{-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:10%;height:100%;position:absolute;width:100%}.flip-card-front{background-color:#bbb;color:#000}.flip-card-back{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}
+/*# sourceMappingURL=main.89795259.css.map*/

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89795259.css",
+    "main.js": "/static/js/main.258942f3.js",
+    "static/media/bear.png": "/static/media/bear.d591eb05b522b1231ee2.png",
+    "static/media/background.jpg": "/static/media/background.7d7bd0b751498e7c2bcf.jpg",
+    "static/media/deer_logo512.png": "/static/media/deer_logo512.99cf44631998682c2202.png",
+    "index.html": "/index.html",
+    "main.89795259.css.map": "/static/css/main.89795259.css.map",
+    "main.258942f3.js.map": "/static/js/main.258942f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89795259.css",
+    "static/js/main.258942f3.js"
+  ]
+}
